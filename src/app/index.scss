@@ -5,13 +5,6 @@
   padding: 0.2em 0;
 }
 
-.thumbnail {
-  height: 200px;
-
-  img.pull-right {
-    width: 50px;
-  }
-}
 // injector
 @import 'mixins.scss';
 @import 'variables.scss';
@@ -28,7 +21,7 @@ body, #page-top {
   height: 100%;
   font-family: $bodyFont;
   color: $light;
-  background-color: $dark;
+  background-color: $cream;
 }
 
 h2, h3, h4, h5, h6 {
@@ -210,6 +203,10 @@ a {
   color: $light;
 }
 
+#contact {
+  color: $dark;
+}
+
 @media(min-width:767px) {
   .content-section {
     padding-top: 250px;
@@ -301,4 +298,14 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: transparentize($light, .2);
+}
+
+.list-group-item {
+  background-color: transparentize(rgb(0,0,0), 0.7);
+  border: none;
+
+  .badge {
+    background-color: #ccc;
+    font-size: 1.3rem;
+  }
 }

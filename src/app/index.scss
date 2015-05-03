@@ -63,7 +63,7 @@ a {
 
 .light {
   position: relative;
-  top: -0.02em;
+  top: -0.010em;
   font-weight: 400;
   color: $primary;
 }
@@ -273,6 +273,7 @@ footer {
     margin: 0;
     font-size: 0.8rem;
     font-family: Helvetica, Arial, sans-serif;
+    color: $dark;
   }
 }
 

@@ -40,12 +40,17 @@ const Line = styled.div`
   `
         : ''};
 `;
-const Footer = styled.div`
+const CopyLine = styled.div`
   text-align: right;
   font-size: 36px;
   font-weight: bold;
   letter-spacing: -0.15rem;
   color: ${color};
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 const Index = () => {
@@ -60,7 +65,7 @@ const Index = () => {
     const dx = ex - cx;
     let theta = Math.atan2(dy, dx); // range (-PI, PI]
     theta *= 180 / Math.PI; // rads to degs, range (-180, 180]
-    return theta;
+    return theta + 90;
   };
 
   const onMouseMove = (e: MouseEvent) => {
@@ -86,7 +91,16 @@ const Index = () => {
         <Line>NUBSDOTORG</Line>
         <Line outline>NUBSDOTORG</Line>
         <Line outline>NUBSDOTORG</Line>
-        <Footer outline>&copy; {new Date().getFullYear()}</Footer>
+        <CopyLine outline>
+          <a
+            href="https://isomorph.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            &copy;
+          </a>{' '}
+          {new Date().getFullYear()}
+        </CopyLine>
       </div>
     </Container>
   );

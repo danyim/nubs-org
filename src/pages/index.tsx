@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 
 import GlobalStyle from 'Components/global-style';
@@ -84,6 +85,12 @@ const Index = () => {
 
   return (
     <Container angle={angle} ref={ref} onMouseMove={onMouseMove}>
+      <Helmet defer={false}>
+        <meta charSet="utf-8" />
+        <meta name="description" content="The original nubs.org, since 2003." />
+        <title>NUBSDOTORG, est. 2003</title>
+        <link rel="canonical" href="https://nubs.org/" />
+      </Helmet>
       <GlobalStyle />
       <div>
         <Line outline>NUBSDOTORG</Line>

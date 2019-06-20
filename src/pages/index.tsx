@@ -6,8 +6,8 @@ import GlobalStyle from 'Components/global-style';
 
 const color = 'rgb(237, 40, 40)';
 const Container = styled.div`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   color: ${color};
   display: grid;
@@ -99,11 +99,7 @@ const Index = () => {
         <Line outline>NUBSDOTORG</Line>
         <Line outline>NUBSDOTORG</Line>
         <CopyLine outline>
-          <a
-            href="https://isomorph.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://isomorph.co" target="_blank" rel="noopener noreferrer">
             &copy;
           </a>{' '}
           {new Date().getFullYear()}

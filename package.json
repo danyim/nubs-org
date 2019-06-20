@@ -78,5 +78,13 @@
   },
   "bugs": {
     "url": "https://github.com/danyim/web/issues"
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 120
   }
 }

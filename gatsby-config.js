@@ -1,9 +1,10 @@
 /* eslint-disable */
 module.exports = {
   siteMetadata: {
-    title: "daniel yim's blog",
-    description: 'Hi',
+    title: 'nubs.org',
+    description: "Don't be a nub",
     author: '@danyim',
+    siteUrl: 'https://nubs.org'
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -12,8 +13,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -26,8 +27,8 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/favicon.png',
-      },
+        icon: 'src/images/favicon.png'
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
@@ -42,9 +43,9 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Abel', 'Lato', 'Open Sans'],
-        },
-      },
-    },
-  ],
+          families: ['Abel', 'Lato', 'Open Sans']
+        }
+      }
+    }
+  ]
 };
